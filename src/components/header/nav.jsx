@@ -16,7 +16,7 @@ const Nav = () => {
           </li>
           <li className="text-primary hidden md:block">
             <Link to="/" className="flex items-center space-x-2">
-              <LuPhone />
+              <LuPhone className="text-xl"/>
               <span>1400</span>
             </Link>
           </li>
