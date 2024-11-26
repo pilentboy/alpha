@@ -1,11 +1,17 @@
-
-import './App.css';
-
+import Header from "./pages/Header";
+import Container from "./components/container";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 function App() {
   return (
-    <div className="w-screen h-screen bg-gradient-to-l from-red-500 to-black  items-center  flex justify-center text-red-600  text-6xl	 font-bold">
-		<h1 className='hover:scale-110 duration-150'> !!Alphabet!!</h1>
-    </div>
+    <>
+      <Container>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Header />}></Route>
+          </Routes>
+        </BrowserRouter>
+      </Container>
+    </>
   );
 }
 
