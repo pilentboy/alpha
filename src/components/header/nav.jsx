@@ -1,13 +1,11 @@
 import { Link } from "react-router-dom";
-import { IoHomeOutline } from "react-icons/io5";
 import { LuPhone } from "react-icons/lu";
-
 const Nav = () => {
   return (
     <nav>
-      <div className="w-4/5 h-14 rounded-md shadow-test bg-white my-5 flex items-center justify-between px-6 py-3 mx-auto md:w-4/5 ">
+      <div className="w-4/5 h-14 rounded-md shadow-navShadow bg-white my-5 flex items-center justify-between px-6 py-3 mx-auto md:w-4/5 font-yekan ">
         {/* left links */}
-        <ul className="flex items-center space-x-3 font-semibold">
+        <ul className="flex items-center space-x-3 ">
           <li>
             <Link
               to="/"
@@ -24,10 +22,11 @@ const Nav = () => {
           </li>
         </ul>
         {/* right links */}
-        <ul className="flex flex-row-reverse items-center font-bold text-black ">
+        <ul className="flex flex-row-reverse items-center  text-black ">
           <li className="mx-3 hover:text-gray-500 duration-150">
             <Link to="/">
-              <IoHomeOutline className="text-lg" />
+              <img src={process.env.PUBLIC_URL + '/images/Home_Icon.png'} className="w-8" alt="homePage" />
+              {/* <IoHomeOutline className="text-lg" /> */}
             </Link>
           </li>
           <li className="mx-3 hover:text-gray-500 duration-150 hidden md:block">

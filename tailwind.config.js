@@ -16,7 +16,10 @@ module.exports = {
         primary: "#22e7da",
       },
       boxShadow: {
-        test: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
+        navShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
+      },
+      fontFamily: {
+        yekan: ['YekanBakh'] 
       },
     },
   },
