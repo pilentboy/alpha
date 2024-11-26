@@ -4,14 +4,14 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 function App() {
   return (
     <>
-      <Container>
-        <BrowserRouter>
+      <BrowserRouter>
+        <Container>
           <Routes>
             <Route path="/" element={<Header />} />
-            <Route path="*" element={<Navigate to={'/'} />} />
+            <Route path="*" element={<Navigate to={"/"} />} />
           </Routes>
-        </BrowserRouter>
-      </Container>
+        </Container>
+      </BrowserRouter>
     </>
   );
 }
