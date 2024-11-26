@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { LuPhone } from "react-icons/lu";
+
 const Nav = () => {
   return (
     <nav>
@@ -16,8 +16,15 @@ const Nav = () => {
           </li>
           <li className="text-primary hidden md:block">
             <Link to="/" className="flex items-center space-x-1">
-              <LuPhone className="text-xl" />
-              <span className="font-bold">1400</span>
+              {/* <LuPhone className="text-xl" /> */}
+              <i>
+                <img
+                  src={process.env.PUBLIC_URL + "/icons/Phone_Icon.svg"}
+                  className="w-7"
+                  alt="phone"
+                />
+              </i>
+              <span className="font-bold">۱۴۰۰</span>
             </Link>
           </li>
         </ul>
@@ -25,11 +32,15 @@ const Nav = () => {
         <ul className="flex flex-row-reverse items-center  text-black ">
           <li className="mx-3 hover:text-gray-500 duration-150">
             <Link to="/">
-              <img
-                src={process.env.PUBLIC_URL + "/images/Home_Icon.png"}
-                className="w-8"
-                alt="homePage"
-              />
+              <i>
+                <img
+                  src={process.env.PUBLIC_URL + "/icons/Home_Icon.png"}
+                  className="w-8"
+                  alt="home page"
+                  title="خانه"
+                />
+              </i>
+
               {/* <IoHomeOutline className="text-lg" /> */}
             </Link>
           </li>
