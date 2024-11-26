@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/alpha/static/css/main.2b612922.css",
-    "main.js": "/alpha/static/js/main.2ca73ab8.js",
+    "main.css": "/alpha/static/css/main.3ce2288f.css",
+    "main.js": "/alpha/static/js/main.445adbf7.js",
+    "static/media/YekanBakh-VF.ttf": "/alpha/static/media/YekanBakh-VF.0b8187263dd4fcc40806.ttf",
     "index.html": "/alpha/index.html",
-    "main.2b612922.css.map": "/alpha/static/css/main.2b612922.css.map",
-    "main.2ca73ab8.js.map": "/alpha/static/js/main.2ca73ab8.js.map"
+    "main.3ce2288f.css.map": "/alpha/static/css/main.3ce2288f.css.map",
+    "main.445adbf7.js.map": "/alpha/static/js/main.445adbf7.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b612922.css",
-    "static/js/main.2ca73ab8.js"
+    "static/css/main.3ce2288f.css",
+    "static/js/main.445adbf7.js"
   ]
 }
