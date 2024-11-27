@@ -15,7 +15,7 @@ const Nav = () => (
             {/* <LuPhone className="text-xl" /> */}
             <i>
               <img
-                src={`${process.env.PUBLIC_URL}/icons/Home_Icon.png`}
+                src={`${process.env.PUBLIC_URL}/icons/Phone_Icon.svg`}
                 className="w-7"
                 alt="phone"
               />
