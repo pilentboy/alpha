@@ -7,8 +7,9 @@ function App() {
       <BrowserRouter>
         <Container>
           <Routes>
-            <Route path="/" element={<Header />} />
-            <Route path="*" element={<Navigate to={"/"} />} />
+            <Route path="/" element={<Header />}>
+              <Route path="*" element={<Navigate to={"/"} />} />
+            </Route>
           </Routes>
         </Container>
       </BrowserRouter>
