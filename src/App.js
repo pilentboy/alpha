@@ -1,17 +1,20 @@
+import React, { lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Header from "./pages/Header";
-import About from "./pages/About";
-import Home from "./pages/Home";
-import Service from "./pages/Service";
-import Register from "./pages/Register";
-import Phone from "./pages/Phone";
 import Container from "./components/container";
+
+// Lazy loading the components
+const Header = lazy(() => import("./pages/Header"));
+const About = lazy(() => import("./pages/About"));
+const Home = lazy(() => import("./pages/Home"));
+const Service = lazy(() => import("./pages/Service"));
+const Register = lazy(() => import("./pages/Register"));
+const Phone = lazy(() => import("./pages/Phone"));
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
-        <Container>
+    <BrowserRouter>
+      <Container>
+        <Suspense fallback={<div>Loading...</div>}>
           <Routes>
             <Route path="/" element={<Header />}>
               <Route index element={<Home />} />
@@ -22,9 +25,9 @@ function App() {
               <Route path="*" element={<Navigate to="/" />} />
             </Route>
           </Routes>
-        </Container>
-      </BrowserRouter>
-    </>
+        </Suspense>
+      </Container>
+    </BrowserRouter>
   );
 }
 
