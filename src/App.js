@@ -1,6 +1,7 @@
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Header from "./pages/Header";
 import Container from "./components/container";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+
 function App() {
   return (
     <>
@@ -8,7 +9,7 @@ function App() {
         <Container>
           <Routes>
             <Route path="/" element={<Header />}>
-              <Route path="*" element={<Navigate to={"/"} />} />
+              <Route path="*" element={<Navigate to="/" />} />
             </Route>
           </Routes>
         </Container>
