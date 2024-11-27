@@ -16,7 +16,7 @@ module.exports = {
         primary: "#22e7da",
       },
       boxShadow: {
-        navShadow: "0px 1px 8px 1px rgba(0,0,0,0.24)",
+        soft: "0px 1px 8px 1px rgba(0,0,0,0.24)",
       },
       fontFamily: {
         yekan: ["YekanBakh"],

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Nav = () => {
   return (
     <nav>
-      <div className="w-4/5 h-16 rounded-md shadow-navShadow bg-white my-5 flex items-center justify-between px-6 py-3 mx-auto md:w-[90%] font-yekan ">
+      <div className="w-4/5 h-16 rounded-md shadow-soft bg-white my-5 flex items-center justify-between px-6 py-3 mx-auto md:w-[90%] font-yekan ">
         {/* left links */}
         <ul className="flex items-center space-x-3 ">
           <li>
