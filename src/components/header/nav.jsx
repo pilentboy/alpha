@@ -12,7 +12,7 @@ const Nav = () => (
           <JoinLink />
         </li>
         <li className="text-primary hidden md:block">
-          <Link to="/" className="flex items-center space-x-1">
+          <Link to="/phone" className="flex items-center space-x-1">
             {/* <LuPhone className="text-xl" /> */}
             <i>
               <img
@@ -40,8 +40,8 @@ const Nav = () => (
             </i>
           </Link>
         </li>
-        <NavLink title="خدمات" target="/" />
-        <NavLink title="درباره" target="/" />
+        <NavLink title="خدمات" target="/service" />
+        <NavLink title="درباره" target="/about" />
       </ul>
 
       {/* logo */}
